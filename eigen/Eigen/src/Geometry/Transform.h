@@ -436,6 +436,7 @@ public:
     *
     */
   // note: this function is defined here because some compilers cannot find the respective declaration
+  EIGEN_DISABLE_HD_WARNING
   template<typename OtherDerived>
   EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE const typename internal::transform_right_product_impl<Transform, OtherDerived>::ResultType
   operator * (const EigenBase<OtherDerived> &other) const
